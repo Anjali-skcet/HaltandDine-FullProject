@@ -1,0 +1,93 @@
+.reservecont{
+    background-image: url("../Images/reservationtable.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    background-color: #f8f8f8;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 100vw;
+    padding-bottom: 100px;
+}
+.reservation-container {
+    max-width: 800px;
+    margin-left: 350px;
+    margin-top: 100px; 
+    padding: 30px;
+    background:rgba(249, 246, 246, 0.9);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.reservation-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.reservation-container p {
+    font-size: 14px;
+    color: #121212;
+    margin-bottom: 30px;
+}
+
+.reservation-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1 1 calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full-width {
+    flex: 1 1 100%;
+}
+
+.form-group label {
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+}
+
+.reservation-button {
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 60px;
+    margin-top: 40px;
+}
+
+.reservation-button:hover {
+    background-color: #52514f;
+}
+
+  .modal{
+    text-align: center;
+  }

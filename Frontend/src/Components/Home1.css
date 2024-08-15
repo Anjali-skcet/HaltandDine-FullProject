@@ -1,0 +1,47 @@
+.homepage{
+    background-image: url("../Images/Homepage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 50vh;
+    background-attachment: fixed;
+    z-index: -1;
+    filter: brightness(0.7);
+}
+
+.navbarstyle{
+    background-color: black;
+}
+
+.message {
+   
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 130px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+.slideshow{
+    margin-top: 100px;
+}
+
+.message h1,h2{
+    font-family: "Georgia";
+    font-style: italic;
+    font-size: 35px;
+    color: white;
+}
+
+.Footer{
+    margin-top: 700px;
+}
+
+.feature-card{
+    color: black;
+}

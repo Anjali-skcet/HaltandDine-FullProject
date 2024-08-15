@@ -1,0 +1,63 @@
+.navbar {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background: transparent;
+    color: #fff;
+    z-index: 2;
+    border-bottom: 3px solid #ccc;
+    font-family: "Bernadette Rough";
+}
+
+.navbar-logo {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.restaurant-name {
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Georgia";
+    font-style: italic;
+}
+
+.navbar-links {
+    font-family: var(--font-josefin_sans), sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    list-style: none;
+    display: flex;
+    align-items: center; /* Ensure links and icon are vertically aligned */
+    margin: 0;
+    padding: 0; /* Remove padding to align links properly */
+}
+
+.navbar-links li {
+    margin-left: 30px; /* Adjust spacing between links */
+}
+
+.navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar-links a:hover {
+    color: red;
+}
+
+.navbar-links img {
+    height: 40px; /* Ensure the icon size matches the text size */
+    width: 40px;
+    vertical-align: middle; /* Align the icon vertically with text */
+}

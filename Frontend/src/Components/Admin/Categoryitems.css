@@ -1,0 +1,91 @@
+/* Container for the category items with a background image */
+.category-items-container {
+    background-image: url("../../Images/adminbg.jpg"); /* Add the path to your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Container for the menu items */
+.category-items {
+    font-family: "Mooli";
+    margin-left: 100px;
+    max-width: 1200px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 30px;
+}
+
+.menuimage{
+    height: 200px;
+    width: 300px;
+}
+
+/* Heading */
+.category-items h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+    font-family: "Mooli";
+}
+
+/* Grid for menu items */
+.category-items ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three items per row */
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+    justify-items: center;
+}
+
+/* Each menu item */
+.category-items li {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Image inside the menu item */
+.category-items li img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Hover effect on menu items */
+.category-items li:hover {
+    transform: scale(1.05);
+}
+
+/* Back button */
+.category-items button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #e7943c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Hover effect on button */
+.category-items button:hover {
+    background-color: #ea7f0c;
+}

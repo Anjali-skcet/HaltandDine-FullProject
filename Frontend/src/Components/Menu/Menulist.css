@@ -1,0 +1,204 @@
+.menudetails {
+  background-image: url("../../Images/menupage.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  height: 100%;
+}
+
+.menu-items-container {
+  font-family: "Mooli", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.menu-items {
+  text-align: center;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.menu-items h1 {
+  font-family: "Mooli", sans-serif;
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: white;
+  text-transform: capitalize;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.menu-items ul {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.menu-items li {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-bottom: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.menu-items li:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.menu-items img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.item-details {
+  padding: 15px;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+  color: #333;
+  font-family: "Mooli";
+  font-weight: bold;
+}
+
+.item-price {
+  color: #161414;
+  font-weight: bold;
+}
+
+.menu-items li p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  padding: 10px;
+  color: #555;
+}
+
+.quantity-cart-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.quantity-con {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-con button {
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #a6a1a1;
+  margin: 0 5px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quantity-con button:hover {
+  background-color: #ddd;
+}
+
+.quantity-con span {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+.add-to-cart {
+  background-color: black;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin-left: 15px; /* Add margin to separate the button from the quantity buttons */
+  white-space: nowrap; /* Ensure the button text does not wrap */
+}
+
+.add-to-cart:hover {
+  background-color: rgb(32, 30, 30, 0.7);
+}
+
+@media (max-width: 768px) {
+  .quantity-cart-con {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .add-to-cart {
+    margin-left: 0; /* Reset the margin in narrow viewports */
+    margin-top: 10px; /* Add a margin at the top in column layout */
+    width: 100%; /* Make the button take full width */
+  }
+}
+
+
+.back-to-menu {
+  margin-top: 30px;
+  padding: 10px 25px;
+  font-size: 18px;
+  background-color: #555553;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.back-to-menu:hover {
+  background-color: #0f0e0e;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .menu-items ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+.notification {
+  background-color: #1b1a1a;
+  color: #ffffff;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  text-align: center;
+  width: 400px;
+  align-items: center;
+  margin-left: 550px;
+  margin-top: 40px;
+}
+
+.cart-icon {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 8px;
+  font-size: 12px;
+  font-weight: bold;
+}
